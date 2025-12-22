@@ -1,0 +1,76 @@
+.download-wrap {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2, auto) 1fr;
+  align-items: center;
+  padding: 16px 8px;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: contents;
+  }
+
+  span {
+    font-family: 'Pretendard Variable', sans-serif;
+    order: 1;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+
+  .logo-d {
+    inline-size: 104px;
+    aspect-ratio: 1/1;
+    margin-right: 36px;
+  }
+
+  .arrow-d {
+    order: 2;
+    place-self: center end;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.download-container {
+  background-color: #f5f5f5;
+  padding: 40px 24px;
+
+  @media (850px <= width) {
+    padding: 56px 32px;
+  }
+  h2 {
+    margin-block-end: 36px;
+    @media (850px <= width) {
+      font-size: 1.75rem;
+    }
+    @media (1680px <= width) {
+      width: 1280px;
+      margin: 36px auto;
+      font-size: 2.3125rem;
+      line-height: 1.4em;
+    }
+  }
+
+  ul {
+    @media (1680px <= width) {
+      display: flex;
+      width: 1280px;
+      margin: 0 auto;
+    }
+
+    li {
+      &:first-child {
+        margin-bottom: 36px;
+      }
+    }
+  }
+  .download-wrap {
+    @media (1680px <= width) {
+      width: 558px;
+      height: 192px;
+      margin-right: 36px;
+    }
+  }
+}

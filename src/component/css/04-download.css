@@ -46,16 +46,17 @@
     @media (850px <= width) {
       font-size: 1.75rem;
     }
+
     @media (1680px <= width) {
-      margin: 2.25rem auto;
+      margin: 0 auto;
       font-size: 2.3125rem;
       line-height: 1.4em;
     }
   }
-
   ul {
     @media (1680px <= width) {
       display: flex;
+
       margin: 0 auto;
       justify-content: space-between;
     }

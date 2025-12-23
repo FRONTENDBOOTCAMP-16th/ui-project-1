@@ -4,13 +4,13 @@
 @import '/src/common/base.css';
 @import '/src/common/animation.css';
 
-@import '/src/componenet/css/nav.css';
-@import '/src/componenet/css/visual.css';
-@import '/src/componenet/css/about-03.css';
-@import '/src/componenet/css/download.css';
-@import '/src/componenet/css/qna.css';
-@import '/src/componenet/css/apply.css';
-@import '/src/componenet/css/footer.css';
+@import '/src/component/css/01-nav.css';
+@import '/src/component/css/02-visual.css';
+@import '/src/component/css/03-about.css';
+@import '/src/component/css/04-download.css';
+@import '/src/component/css/05-qna.css';
+@import '/src/component/css/06-apply.css';
+@import '/src/component/css/07-footer.css';
 
 body {
   width: 100%;

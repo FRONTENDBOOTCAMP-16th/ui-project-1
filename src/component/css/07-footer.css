@@ -1,8 +1,9 @@
 footer {
   .footer-container {
     @media (width>= 1680px) {
-      width: 1280px;
+      width: 1630px;
       margin: auto;
+      padding: 0 64px;
     }
   }
 
@@ -58,6 +59,7 @@ footer {
 
     @media (900px <= width) {
       grid-template-columns: 1fr 1fr;
+      min-width: 1200px;
     }
 
     @media (1680px <= width) {
@@ -184,13 +186,17 @@ footer {
     .show-docs {
       margin-top: 36px;
       height: 100%;
+      margin: 0;
+      margin-top: 2em;
+      justify-self: start;
+
       @media (width >= 1680px) {
         justify-self: end;
         align-items: center;
       }
 
-      a {
-        margin-left: 31px;
+      a:first-child {
+        margin-right: 31px;
       }
     }
   }

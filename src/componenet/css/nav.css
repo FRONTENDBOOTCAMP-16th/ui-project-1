@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+ui-component {
+  background: red;
+  display: block;
+  padding: 40px 0;
+}
+.navigation {
+  position: relative;
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 150px;
+  flex-shrink: 0;
+}
+.menu {
+  /* background: green; */
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin-left: 40px;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.menu,
+.nav-logo {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav-logo {
+  width: 39px;
+  /* background: yellowgreen; */
+  cursor: pointer;
+}
+
+.button {
+  color: var(--black);
+  border-radius: 30px;
+  background: var(--white);
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+.lang-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.globe-icon {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.languege-box {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 28px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.menu li {
+  display: flex;
+  align-items: center; /* 글자와 화살표 높이 맞춤 */
+  gap: 4px; /* 글자와 화살표 사이 간격 */
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu li svg {
+  width: 24px; /* 화살표 크기 시안에 맞게 조정 */
+  height: 24px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 언어선택과 버튼 사이 간격 */
+  flex-shrink: 0;
+}
+.lang-selector {
+  margin-right: 0;
+} /* 기존 margin 제거 */
+
+.menu li:hover {
+  color: gray; /* 시안에 맞는 밝은 회색이나 포인트 컬러로 변경 */
+}
+
+/* --- 여기부터 미디어 쿼리 삽입 --- */
+
+/* 햄버거 버튼 기본 설정 (평소엔 숨김) */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0; /* 아이콘 정렬용 */
+}
+
+/* 900px 이하 대응 */
+@media (max-width: 900px) {
+  /* 1. 메뉴와 언어선택 삭제 */
+  .menu,
+  .lang-selector {
+    display: none !important; /* 확실하게 숨기기 위해 추가 */
+  }
+
+  /* 2. 햄버거 버튼 표시 */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* 3. 사이드 여백 조정 (시안 900px 너비에 맞춰 줄임) */
+  .navigation {
+    padding: 8px 40px;
+  }
+
+  /* 4. 가입하기 버튼과 햄버거 버튼 사이 간격 */
+  .nav-right {
+    gap: 16px;
+  }
+}

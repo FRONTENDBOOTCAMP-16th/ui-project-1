@@ -19,7 +19,6 @@
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
-  /* background-color: pink; */
 }
 
 .bg-black {
@@ -28,4 +27,12 @@
 
 .bg-gray {
   background-color: var(--gray);
+}
+
+h2 {
+  font-size: 28.43px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  padding-bottom: 36px;
 }

@@ -1,8 +1,9 @@
 footer {
   .footer-container {
     @media (width>= 1680px) {
-      width: 1280px;
+      width: 1630px;
       margin: auto;
+      padding: 0 64px;
     }
   }
 
@@ -33,7 +34,7 @@ footer {
       color: var(--white);
 
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
 
       h2 {
         margin-block-end: 1.25rem;
@@ -58,6 +59,7 @@ footer {
 
     @media (900px <= width) {
       grid-template-columns: 1fr 1fr;
+      min-width: 1200px;
     }
 
     @media (1680px <= width) {
@@ -73,6 +75,7 @@ footer {
     /* 위치 및 언언 */
     .lang-location {
       display: flex;
+      align-items: center;
       color: var(--white);
       width: 24px;
       height: 24px;
@@ -85,10 +88,11 @@ footer {
       }
       .footer-lang {
         display: flex;
-        align-self: center;
         column-gap: 4px;
+        align-items: center;
 
         select {
+          width: 5em;
           appearance: none;
           background-color: transparent;
           border: none;
@@ -151,8 +155,14 @@ footer {
     grid-template-columns: auto 1fr;
     place-items: center;
     margin-top: 4rem;
+
+    > p {
+      justify-self: start;
+    }
+
     @media (width >= 1680px) {
       grid-template-columns: 1fr 2.5fr 3fr;
+      place-content: start;
     }
 
     .footer-addr-wrap {
@@ -177,13 +187,17 @@ footer {
     .show-docs {
       margin-top: 36px;
       height: 100%;
+      margin: 0;
+      margin-top: 2em;
+      justify-self: start;
+
       @media (width >= 1680px) {
         justify-self: end;
         align-items: center;
       }
 
-      a {
-        margin-left: 31px;
+      a:first-child {
+        margin-right: 31px;
       }
     }
   }

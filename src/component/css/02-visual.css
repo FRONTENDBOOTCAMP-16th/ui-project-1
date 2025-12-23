@@ -1,10 +1,6 @@
 @import '/src/common/theme.css';
 
 /* ========== Visual /  Banner ========== */
-section {
-  max-width: 1680px;
-}
-
 .visual {
   display: flex;
   align-items: center;
@@ -19,17 +15,17 @@ section {
 
 /* 내부 정렬 */
 .visual-inner {
-  margin-left: 300px;
+  margin-left: 64px;
 }
 
-.visual-title {
+/* .visual-title {
   font-size: clamp(1.6rem, 3.5vw, 3.2rem);
   font-weight: 700;
-}
+} */
 
 .visual-desc {
   font-weight: 600;
-  margin-block: 28px;
+  margin-block-end: 46px;
   color: var(--primary);
   font-size: clamp(0.875rem, 2.5vw, 1rem);
 }

@@ -40,39 +40,41 @@
   padding: 2.5rem 1.5rem;
 
   @media (850px <= width) {
-    padding: 3.5rem 2rem;
+    padding: 3.5rem 4rem;
   }
   h2 {
-    margin-block-end: 36px;
     @media (850px <= width) {
       font-size: 1.75rem;
     }
+
     @media (1680px <= width) {
-      width: 1280px;
-      margin: 2.25rem auto;
+      margin: 0 auto;
       font-size: 2.3125rem;
       line-height: 1.4em;
     }
   }
-
   ul {
     @media (1680px <= width) {
       display: flex;
-      width: 1280px;
+
       margin: 0 auto;
+      justify-content: space-between;
     }
 
     li {
       &:first-child {
         margin-bottom: 2.25rem;
+
+        @media (width>= 1680px) {
+          margin-right: 2.25rem;
+        }
       }
     }
   }
   .download-wrap {
     @media (1680px <= width) {
-      width: 558px;
-      height: 192px;
-      margin-right: 2.25rem;
+      width: 750px;
+      aspect-ratio: 4/1;
     }
   }
 }

@@ -5,6 +5,8 @@
   --error: #e11900;
   --error-bg: rgba(225, 25, 0, 0.1);
   --content-bottom: #a6a6a6;
+  --green: #048848;
+  --green-bg: rgba(4, 136, 72, 0.1);
 }
 
 .container {
@@ -14,7 +16,7 @@
   padding: 40px 24px;
 }
 
-h1 {
+h2 {
   font-size: 28.43px;
   font-style: normal;
   font-weight: 700;
@@ -153,6 +155,12 @@ input:not(:placeholder-shown):invalid + .error-message {
     width: 100%;
     padding: 56px 32px;
   }
+
+  input:focus,
+  select:focus {
+    border: 2px solid var(--green);
+    background-color: var(--green-bg);
+  }
 }
 
 @media (width >= 901px) {
@@ -168,7 +176,7 @@ input:not(:placeholder-shown):invalid + .error-message {
     gap: 0;
   }
 
-  h1 {
+  h2 {
     flex: 0 0 50%;
     align-self: center;
     margin: 0;
@@ -186,5 +194,11 @@ input:not(:placeholder-shown):invalid + .error-message {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  input:focus,
+  select:focus {
+    border: 2px solid var(--green);
+    background-color: var(--green-bg);
   }
 }

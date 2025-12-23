@@ -75,6 +75,7 @@ footer {
     /* 위치 및 언언 */
     .lang-location {
       display: flex;
+      align-items: center;
       color: var(--white);
       width: 24px;
       height: 24px;

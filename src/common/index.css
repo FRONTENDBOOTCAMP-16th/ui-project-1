@@ -4,6 +4,14 @@
 @import '/src/common/base.css';
 @import '/src/common/animation.css';
 
+@import '/src/componenet/css/nav.css';
+@import '/src/componenet/css/visual.css';
+@import '/src/componenet/css/about-03.css';
+@import '/src/componenet/css/download.css';
+@import '/src/componenet/css/qna.css';
+@import '/src/componenet/css/apply.css';
+@import '/src/componenet/css/footer.css';
+
 body {
   width: 100%;
   max-width: 1680px;

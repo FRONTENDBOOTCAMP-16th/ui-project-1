@@ -1,0 +1,91 @@
+@import '/src/common/theme.css';
+
+/* ========== FAQ / Inner ========== */
+section {
+  max-width: 1680px;
+}
+
+.faq {
+  padding: 64px;
+}
+
+.faq-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: var(--black);
+}
+
+/* each item */
+.faq-item {
+  border-bottom: 1px solid var(--gray-100);
+}
+
+/* summary line */
+.faq-q {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 44px 18px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  position: relative;
+  line-height: 1.4;
+}
+
+/* + 아이콘 */
+.faq-q::after {
+  content: '+';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* open 상태면 - 로 변경 */
+.faq-item[open] > .faq-q::after {
+  content: '–';
+}
+
+/* answer */
+.faq-a {
+  padding: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.7;
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+}
+
+/* ========== Tablet ========== */
+@media (width<=900px) {
+  /* 필요 없을 거 같음 */
+}
+
+/* ========== Mobile ========== */
+@media (width<=500px) {
+  .faq-title {
+    font-size: 22px;
+  }
+  .faq-q {
+    padding-right: 36px;
+  }
+}

@@ -4,8 +4,28 @@
 @import '/src/common/base.css';
 @import '/src/common/animation.css';
 
-body {
+@import '/src/component/css/01-nav.css';
+@import '/src/component/css/02-visual.css';
+@import '/src/component/css/03-about.css';
+@import '/src/component/css/04-download.css';
+@import '/src/component/css/05-qna.css';
+@import '/src/component/css/06-apply.css';
+@import '/src/component/css/07-footer.css';
+
+.index-box {
+  width: 100%;
+}
+.index-wrap {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-gray {
+  background-color: var(--gray);
 }

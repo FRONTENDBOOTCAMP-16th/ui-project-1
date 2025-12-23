@@ -1,16 +1,11 @@
 @import '/src/common/theme.css';
 
 /* ========== FAQ / Inner ========== */
-section {
-  max-width: 1680px;
-}
-
 .faq {
   padding: 64px;
 }
 
 .faq-inner {
-  max-width: 1080px;
   margin: 0 auto;
 }
 

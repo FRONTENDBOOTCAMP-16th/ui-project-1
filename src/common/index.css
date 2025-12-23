@@ -12,8 +12,20 @@
 @import '/src/component/css/06-apply.css';
 @import '/src/component/css/07-footer.css';
 
-body {
+.index-box {
+  width: 100%;
+}
+.index-wrap {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-gray {
+  background-color: var(--gray);
 }

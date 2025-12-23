@@ -1,0 +1,74 @@
+@import '/src/common/theme.css';
+
+/* ========== Visual /  Banner ========== */
+section {
+  max-width: 1680px;
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+
+  /* 배경 이미지 */
+  background-image: url('/src/assets/visual-l.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  min-height: 400px;
+}
+
+/* 내부 정렬 */
+.visual-inner {
+  margin-left: 300px;
+}
+
+.visual-title {
+  font-size: clamp(1.6rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+}
+
+.visual-desc {
+  font-weight: 600;
+  margin-block: 28px;
+  color: var(--primary);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+/* 버튼 */
+.visual-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  padding: 16px 24px;
+  background: var(--black);
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========== Tablet ========== */
+@media (width<=900px) {
+  .visual {
+    /* 배경 이미지 */
+    background-image: url('/src/assets/visual-m.png');
+    background-position: 80% 100%;
+    min-height: 450px;
+  }
+
+  .visual-inner {
+    margin-left: 32px;
+  }
+}
+/* ========== Mobile ========== */
+@media (width<=500px) {
+  .visual {
+    background-image: url('/src/assets/visual-s.png');
+    min-height: 256px;
+  }
+
+  .visual-inner {
+    margin-left: 24px;
+  }
+}

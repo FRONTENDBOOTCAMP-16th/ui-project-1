@@ -1,0 +1,11 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+@import '/src/common/animation.css';
+
+body {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}

@@ -1,0 +1,190 @@
+footer {
+  .footer-container {
+    @media (width>= 1680px) {
+      width: 1280px;
+      margin: auto;
+    }
+  }
+
+  /* footer */
+  position: absolute;
+  bottom: 0;
+  padding: 40px 24px;
+
+  width: 100%;
+  background-color: var(--black);
+  /* logo */
+  .footer-logo {
+    display: block;
+    width: 2.25rem;
+    margin-block-end: 1.75rem;
+  }
+  /* 고객지원 */
+  .footer-support {
+    display: inline-block;
+    margin-bottom: 2.25rem;
+    padding-block: 0.5em;
+    color: var(--white);
+  }
+
+  /* 기업정보 상품 글로벌 서민의식 */
+  .company-info {
+    ul {
+      color: var(--white);
+
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        margin-block-end: 1.25rem;
+      }
+
+      li ul {
+        flex-direction: column;
+        margin-block-end: 64px;
+
+        li {
+          margin-block-end: 1rem;
+        }
+      }
+    }
+  }
+
+  /* sns 언어및 위치 다운로드 */
+  .footer-lnb {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    row-gap: 2.25rem;
+
+    @media (900px <= width) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (1680px <= width) {
+      grid-template-columns: 1fr 1fr 2fr;
+    }
+    /* sns */
+    .sns ul {
+      display: flex;
+      width: 230px;
+      justify-content: space-between;
+    }
+
+    /* 위치 및 언언 */
+    .lang-location {
+      display: flex;
+      color: var(--white);
+      width: 24px;
+      height: 24px;
+
+      @media (width>= 900px) {
+        justify-content: end;
+      }
+      @media (1680px <= width) {
+        justify-content: start;
+      }
+      .footer-lang {
+        display: flex;
+        align-self: center;
+        column-gap: 4px;
+
+        select {
+          appearance: none;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          margin-right: 16px;
+          color: var(--white);
+
+          option {
+            color: var(--black);
+          }
+        }
+      }
+      .footer-location {
+        margin-left: 64px;
+        display: flex;
+        column-gap: 4px;
+
+        span {
+          width: 4em;
+        }
+      }
+    }
+  }
+  /* 다운로드 */
+  .footer-download {
+    display: flex;
+    @media (width>=1680px) {
+      justify-content: end;
+    }
+    a {
+      width: 135px;
+      height: 40px;
+
+      @media (1680px <= width) {
+        place-content: end;
+      }
+      & {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid var(--white);
+      }
+
+      &:first-child {
+        background-image: url(../../assets/google.jpg);
+        margin-right: 1rem;
+      }
+
+      &:last-child {
+        background-image: url(../../assets/applestore.jpg);
+      }
+    }
+  }
+  /* 주소 영역 */
+  .company-addr {
+    color: var(--gray);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
+    margin-top: 4rem;
+    @media (width >= 1680px) {
+      grid-template-columns: 1fr 2.5fr 3fr;
+    }
+
+    .footer-addr-wrap {
+      &:first-child {
+        margin-right: 36px;
+      }
+      /* 회사정보 */
+      span {
+        line-height: 1.5em;
+        &::after {
+          content: '|';
+          margin-inline: 0.5em;
+        }
+
+        &:last-child::after {
+          content: '';
+        }
+      }
+    }
+
+    /*  개인정보보호 약관 */
+    .show-docs {
+      margin-top: 36px;
+      height: 100%;
+      @media (width >= 1680px) {
+        justify-self: end;
+        align-items: center;
+      }
+
+      a {
+        margin-left: 31px;
+      }
+    }
+  }
+}

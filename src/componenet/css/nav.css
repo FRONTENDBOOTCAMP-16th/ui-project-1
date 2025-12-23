@@ -1,3 +1,12 @@
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+} */
+
 ui-component {
   background: red;
   display: block;
@@ -10,23 +19,20 @@ ui-component {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1680px;
-  max-height: 88px;
-  padding: 13px 64px;
+  padding: 15px 150px;
   flex-shrink: 0;
 }
 .menu {
   /* background: green; */
-
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--white);
   display: flex;
   gap: 32px;
   list-style: none;
   margin-left: 40px;
   margin-right: auto;
   justify-content: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
 }
 
 .menu,

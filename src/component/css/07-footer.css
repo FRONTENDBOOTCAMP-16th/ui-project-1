@@ -33,7 +33,7 @@ footer {
       color: var(--white);
 
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
 
       h2 {
         margin-block-end: 1.25rem;
@@ -85,10 +85,11 @@ footer {
       }
       .footer-lang {
         display: flex;
-        align-self: center;
         column-gap: 4px;
+        align-items: center;
 
         select {
+          width: 5em;
           appearance: none;
           background-color: transparent;
           border: none;
@@ -151,8 +152,14 @@ footer {
     grid-template-columns: auto 1fr;
     place-items: center;
     margin-top: 4rem;
+
+    > p {
+      justify-self: start;
+    }
+
     @media (width >= 1680px) {
       grid-template-columns: 1fr 2.5fr 3fr;
+      place-content: start;
     }
 
     .footer-addr-wrap {
